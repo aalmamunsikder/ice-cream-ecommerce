@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Leaf, Award, ThumbsUp } from 'lucide-react';
+import SectionHeading from './SectionHeading';
 
 interface Feature {
   icon: React.ReactNode;
@@ -61,20 +62,13 @@ const Features: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-block bg-mela-pink-50 text-mela-pink-500 px-4 py-1.5 rounded-full font-medium text-sm mb-3">
-            আমাদের বৈশিষ্ট্য
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-mela-brown-700 mb-4">
-            কেন আমাদের <span className="text-mela-pink-500 relative">
-              নির্বাচন করবেন
-              <span className="absolute bottom-1 left-0 w-full h-2 bg-mela-pink-200 -z-10 transform -rotate-1"></span>
-            </span>
-          </h2>
-          <p className="text-mela-brown-600 max-w-2xl mx-auto">
-            আমাদের আইসক্রিম থেকে আপনি পাবেন সর্বোচ্চ মান, স্বাদ এবং পুষ্টিকর উপাদান
-          </p>
-        </div>
+        <SectionHeading
+          badge="আমাদের বৈশিষ্ট্য"
+          title="কেন আমাদের"
+          highlightedText="নির্বাচন করবেন"
+          description="আমাদের আইসক্রিম থেকে আপনি পাবেন সর্বোচ্চ মান, স্বাদ এবং পুষ্টিকর উপাদান"
+          centered={true}
+        />
 
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"

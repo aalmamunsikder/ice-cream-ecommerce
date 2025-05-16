@@ -4,17 +4,6 @@ import LocationGrid from '../components/LocationGrid';
 const Location: React.FC = () => {
   return (
     <div className="pt-20 pb-16">
-      <div className="bg-mela-pink-50 py-12">
-        <div className="container mx-auto px-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-mela-brown-700 mb-4">
-            আমাদের <span className="text-mela-pink-500">অবস্থান সমূহ</span>
-          </h1>
-          <p className="text-gray-600 max-w-2xl">
-            বাংলাদেশের বিভিন্ন জায়গায় আমাদের আইসক্রিম মেলার শাখা রয়েছে। আপনার নিকটবর্তী শাখা খুঁজুন।
-          </p>
-        </div>
-      </div>
-      
       <LocationGrid />
       
       <div className="container mx-auto px-4 py-12">

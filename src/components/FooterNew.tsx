@@ -68,7 +68,10 @@ const FooterNew: React.FC = () => {
             <motion.div variants={itemVariants} className="flex flex-col items-start">
               <Link to="/" className="inline-block mb-6">
                 <h3 className="text-3xl font-bold">
-                  <span className="text-mela-pink-400">আইসক্রিম</span>
+                  <span className="inline-flex flex-col relative">
+                    <span className="text-mela-pink-400">আইসক্রিম</span>
+                    <span className="h-2 bg-mela-pink-200/30 w-full absolute -bottom-1 transform -rotate-1"></span>
+                  </span>
                   <span className="text-white">মেলা</span>
                 </h3>
               </Link>

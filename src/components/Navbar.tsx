@@ -40,7 +40,10 @@ const Navbar: React.FC = () => {
       <nav className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <h1 className="text-2xl md:text-3xl font-bold">
-            <span className="text-mela-pink-500">আইসক্রিম</span>
+            <span className="inline-flex flex-col relative">
+              <span className="text-mela-pink-500">আইসক্রিম</span>
+              <span className="h-2 bg-mela-pink-200 w-full absolute -bottom-1 transform -rotate-1"></span>
+            </span>
             <span className="text-mela-brown-500">মেলা</span>
           </h1>
         </Link>

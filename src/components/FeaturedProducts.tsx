@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRight, Star } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import ProductCard from './ProductCard';
 import { Link } from 'react-router-dom';
 import { products } from '../data/products';
+import SectionHeading from './SectionHeading';
 
 const FeaturedProducts: React.FC = () => {
   // Ensure we get exactly 4 featured products, prioritizing popular ones
@@ -51,17 +52,13 @@ const FeaturedProducts: React.FC = () => {
             className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4"
           >
             <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="inline-flex items-center justify-center p-1 bg-mela-pink-100 rounded-md">
-                  <Star size={16} className="text-mela-pink-500 fill-mela-pink-500" />
-                </span>
-                <p className="text-mela-pink-500 font-medium">আমাদের সেরা পণ্য</p>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-mela-brown-700">জনপ্রিয় <span className="text-mela-pink-500 relative">
-                স্বাদ
-                <span className="absolute bottom-1 left-0 w-full h-2 bg-mela-pink-200 -z-10 transform -rotate-1"></span>
-              </span></h2>
-              <p className="text-gray-600 mt-2 max-w-md">আমাদের সবচেয়ে জনপ্রিয় আইসক্রিম স্বাদ সমূহ যা আপনাকে মুগ্ধ করবে</p>
+              <SectionHeading
+                badge="আমাদের সেরা পণ্য"
+                title="জনপ্রিয়"
+                highlightedText="স্বাদ"
+                description="আমাদের সবচেয়ে জনপ্রিয় আইসক্রিম স্বাদ সমূহ যা আপনাকে মুগ্ধ করবে"
+                centered={false}
+              />
             </div>
             
             <Link 

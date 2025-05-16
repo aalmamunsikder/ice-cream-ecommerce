@@ -16,12 +16,18 @@ const Products: React.FC = () => {
     <div className="pt-20 pb-16">
       <div className="bg-mela-pink-50 py-12">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-mela-brown-700 mb-4">
-            আমাদের <span className="text-mela-pink-500">পণ্য সমূহ</span>
-          </h1>
-          <p className="text-gray-600 max-w-2xl">
-            আইসক্রিম মেলার বিভিন্ন ধরনের আইসক্রিম। বিভিন্ন স্বাদে আপনার পছন্দমত আইসক্রিম বেছে নিন।
-          </p>
+          <div className="mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-mela-brown-700 mb-4">
+              আমাদের{' '}
+              <span className="inline-flex flex-col relative">
+                <span className="text-mela-pink-500">পণ্য সমূহ</span>
+                <span className="h-2 bg-mela-pink-200 w-full absolute -bottom-2 transform -rotate-1"></span>
+              </span>
+            </h1>
+            <p className="text-gray-600 max-w-2xl mt-8">
+              আইসক্রিম মেলার বিভিন্ন ধরনের আইসক্রিম। বিভিন্ন স্বাদে আপনার পছন্দমত আইসক্রিম বেছে নিন।
+            </p>
+          </div>
         </div>
       </div>
       
