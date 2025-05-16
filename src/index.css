@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #FF6B95;
+  --color-secondary: #FFF0F5;
+  --color-accent: #8A0303;
+  --color-text: #4A0404;
+  --color-bg: #FFF5F8;
+}
+
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.bangla-font {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.btn-primary {
+  @apply bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full transition-all duration-300;
+}
+
+.hero-gradient {
+  background: linear-gradient(to right, rgba(255, 240, 245, 0.9), rgba(255, 107, 149, 0.3));
+}
+
+.product-card {
+  @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.nav-link {
+  @apply font-bold hover:text-pink-500 transition-colors duration-200;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5483;
+}
